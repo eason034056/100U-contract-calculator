@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100U - 交易倉位計算器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #FF1700;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .features {
+            padding: 80px 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            flex: 1;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #FF1700;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .features h2 {
+                font-size: 28px;
+            }
+
+            .feature-item h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>100U</h1>
+        <p>專業的交易倉位計算工具</p>
+    </div>
+
+    <div class="features">
+        <h2>功能特點</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>精確計算</h3>
+                <p>根據您的交易參數，精確計算倉位價值和止盈價格，幫助您做出更明智的交易決策。</p>
+            </div>
+            <div class="feature-item">
+                <h3>風險管理</h3>
+                <p>內建風險百分比計算，幫助您更好地控制每筆交易的風險，保護您的資金安全。</p>
+            </div>
+            <div class="feature-item">
+                <h3>簡潔界面</h3>
+                <p>直觀的用戶界面設計，讓您能夠快速輸入參數，即時獲得計算結果。</p>
+            </div>
+            <div class="feature-item">
+                <h3>離線使用</h3>
+                <p>完全離線運作，不需要網路連接，保護您的隱私安全。所有計算都在本地完成。</p>
+            </div>
+            <div class="feature-item">
+                <h3>即時反饋</h3>
+                <p>輸入數值時提供即時視覺和觸覺反饋，讓操作更加流暢自然。</p>
+            </div>
+            <div class="feature-item">
+                <h3>完全免費</h3>
+                <p>無需付費，無廣告干擾，專注於提供最佳的交易計算體驗。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="./privacy.html">隱私政策</a>
+        <a href="./support.html">支援服務</a>
+    </div>
+</body>
+</html>
