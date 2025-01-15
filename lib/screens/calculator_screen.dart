@@ -227,7 +227,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         child: GestureDetector(
                           onTap: () => _showNumberKeyboard(_riskPercentageController),
                           child: SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.12,
+                            height: MediaQuery.of(context).size.height * 0.15,
                             child: Card(
                               color: Colors.grey[100],
                               elevation: 0,
@@ -236,7 +236,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const SizedBox(height: 8),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -295,7 +294,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         child: GestureDetector(
                           onTap: () => _showNumberKeyboard(_riskRewardRatioController),
                           child: SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.12,
+                            height: MediaQuery.of(context).size.height * 0.15,
                             child: Card(
                               color: Colors.grey[100],
                               elevation: 0,
@@ -305,7 +304,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const SizedBox(height: 8),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -340,8 +338,12 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   ),
                 ),
 
-                const Padding(
-                  padding: EdgeInsets.only(top: 24.0, left: 8.0, bottom: 8.0),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.02,
+                    left: 8.0,
+                    bottom: MediaQuery.of(context).size.height * 0.01,
+                  ),
                   child: Text(
                     '輸入交易參數',
                     style: TextStyle(
@@ -607,7 +609,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           // 重置按鈕
           Positioned(
             right: 16.0,
-            bottom: 32.0,
+            bottom: 24.0,
             child: Container(
               width: 60,
               height: 60,
